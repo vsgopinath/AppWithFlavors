@@ -1,4 +1,4 @@
-package com.example.gviswa200.myapplication.test;
+package com.example.gviswa200.myapplication.flavor1.test;
 
 import cucumber.api.CucumberOptions;
 
