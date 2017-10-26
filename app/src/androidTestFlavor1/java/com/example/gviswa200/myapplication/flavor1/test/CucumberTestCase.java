@@ -15,9 +15,9 @@ import cucumber.api.CucumberOptions;
 @CucumberOptions(features = "features", // Test scenarios
         glue = {"com.example.gviswa200.myapplication.cucumber.steps"}, // Steps definitions
         format = {"pretty", // Cucumber report formats and location to store them in phone/emulator
-                "html:/data/data/com.example.gviswa200.myapplication/flavor1/cucumber-reports/cucumber-html-report",
-                "json:/data/data/com.example.gviswa200.myapplication/flavor1/cucumber-reports/cucumber.json",
-                "junit:/data/data/com.example.gviswa200.myapplication/flavor1/cucumber-reports/cucumber.xml"
+                "html:/data/data/com.example.gviswa200.myapplication.flavor1/cucumber-reports/cucumber-html-report",
+                "json:/data/data/com.example.gviswa200.myapplication.flavor1/cucumber-reports/cucumber.json",
+                "junit:/data/data/com.example.gviswa200.myapplication.flavor1/cucumber-reports/cucumber.xml"
             // Note: if you don't have write access to /mnt/sdcard/ on the phone use instead
             // the following path here and in the build.gradle: /data/data/com.neoranga55.cleanguitestarchitecture/cucumber-reports/
         },
