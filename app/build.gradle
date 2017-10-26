@@ -5,16 +5,17 @@ android {
     buildToolsVersion "26.0.2"
     defaultConfig {
         applicationId "com.example.gviswa200.myapplication"
-        minSdkVersion 23
+        minSdkVersion 21
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
-        //testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        testInstrumentationRunner "com.example.gviswa200.myapplication.cucumber.runner.CucumberTestRunner"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+       // testInstrumentationRunner "com.example.gviswa200.myapplication.cucumber.runner.CucumberTestRunner"
     }
     productFlavors {
         flavor1 {
             applicationId 'com.example.gviswa200.myapplication.flavor1'
+            testInstrumentationRunner "com.example.gviswa200.myapplication.cucumber.runner.CucumberTestRunner"
         }
         flavor2 {
             applicationId 'com.example.gviswa200.myapplication.flavor2'
