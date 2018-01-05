@@ -21,7 +21,7 @@ import cucumber.api.CucumberOptions;
             // Note: if you don't have write access to /mnt/sdcard/ on the phone use instead
             // the following path here and in the build.gradle: /data/data/com.neoranga55.cleanguitestarchitecture/cucumber-reports/
         },
-        tags={"@login-scenarios"}
+        tags={"@welcome"}
 )
 // This class must be in a different package than the glue code
 // (this class is in '...cucumber.test' and glue is in '...cucumber.steps')
