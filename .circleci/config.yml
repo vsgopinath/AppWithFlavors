@@ -23,6 +23,9 @@ jobs:
                 command: export LD_LIBRARY_PATH=${ANDROID_HOME}/emulator/lib64:${ANDROID_HOME}/emulator/lib64/qt/lib && ${ANDROID_HOME}/emulator/emulator64-arm -avd test -noaudio -no-boot-anim -no-window -accel on
                 background: true
       - run:
+                name: Grant Permission
+                command: chmod +x gradlew
+      - run:
           name: Download Dependencies
           command: ./gradlew androidDependencies
       - save_cache:
