@@ -12,10 +12,10 @@ jobs:
       - checkout
       - restore_cache:
           key: jars-{{ checksum "build.gradle" }}-{{ checksum  "app/build.gradle" }}
-       - run:
+      - run:
                 name: Update
                 command: ${ANDROID_HOME}/tools/bin/sdkmanager --update
-       -run:
+       - run:
                 name: Setup emulator
                 command: sdkmanager "system-images;android-25;google_apis;armeabi-v7a" && ${ANDROID_HOME}/tools/bin/sdkmanager --update && echo "no" | avdmanager create avd -n test -k "system-images;android-25;google_apis;armeabi-v7a"
        - run:
