@@ -38,7 +38,7 @@ public class StepDefinitions {
     private BasePage mCurrentPage;
     private Activity mActivity;
     @Rule
-    private ActivityTestRule<MainActivity> mActivityRule = new ActivityTestRule<>(MainActivity.class,
+    public ActivityTestRule<MainActivity> mActivityRule = new ActivityTestRule<>(MainActivity.class,
             true, true);
 
     @Given("^I see the login page$")
